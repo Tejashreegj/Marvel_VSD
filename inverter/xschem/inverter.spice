@@ -1,0 +1,7 @@
+** sch_path: /mnt/a/Marvel_project/inverter/xschem/inverter.sch
+.subckt inverter in out vss vdd
+*.PININFO in:I out:O vss:B vdd:B
+XM1 out in vss vss sky130_fd_pr__nfet_01v8 L=0.18 W=4.5 nf=3 m=1
+XM2 out in vdd vdd sky130_fd_pr__pfet_01v8 L=0.18 W=3 nf=3 m=1
+.ends
+.end
