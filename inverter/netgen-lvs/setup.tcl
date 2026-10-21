@@ -1,1 +1,1 @@
-/usr/share/pdk/sky130A/libs.tech/netgen-lvs/sky130A_setup.tcl
+/usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl

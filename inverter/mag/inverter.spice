@@ -1,0 +1,77 @@
+* NGSPICE file created from inverter.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_KBZXWL B D0 G0 S1 G1 D2 S2 G2
+X0 S2 G2 D2 B sky130_fd_pr__nfet_01v8 ad=0.4425 pd=3.59 as=0.225 ps=1.8 w=1.5 l=0.18
+X1 S1 G0 D0 B sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.8 as=0.4425 ps=3.59 w=1.5 l=0.18
+X2 D2 G1 S1 B sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.8 as=0.225 ps=1.8 w=1.5 l=0.18
+C0 D2 G1 0.02381f
+C1 S1 D0 0.07318f
+C2 G2 D2 0.02301f
+C3 D2 S1 0.07321f
+C4 D2 S2 0.07318f
+C5 G2 G1 0.00729f
+C6 G1 S1 0.02324f
+C7 G2 S1 0.00122f
+C8 S2 G1 0.00122f
+C9 G0 D0 0.02301f
+C10 G0 D2 0.00122f
+C11 G2 S2 0.02324f
+C12 S2 S1 0.00775f
+C13 G0 G1 0.00729f
+C14 D2 D0 0.00775f
+C15 G2 G0 0.01248f
+C16 G0 S1 0.02324f
+C17 G1 D0 0.00122f
+C18 S2 B 0.183f
+C19 D2 B 0.19784f
+C20 S1 B 0.19684f
+C21 D0 B 0.18416f
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_XQ58Y7 B D0 G0 S1 G1 D2 S2 G2 VSUBS
+X0 D2 G1 S1 B sky130_fd_pr__pfet_01v8 ad=0.15 pd=1.3 as=0.15 ps=1.3 w=1 l=0.18
+X1 S2 G2 D2 B sky130_fd_pr__pfet_01v8 ad=0.295 pd=2.59 as=0.15 ps=1.3 w=1 l=0.18
+X2 S1 G0 D0 B sky130_fd_pr__pfet_01v8 ad=0.15 pd=1.3 as=0.295 ps=2.59 w=1 l=0.18
+C0 B S2 0.06811f
+C1 S2 S1 0.00423f
+C2 B G1 0.14315f
+C3 S1 G1 0.01659f
+C4 G0 G1 0.00693f
+C5 B G2 0.13368f
+C6 G2 S1 0
+C7 G2 G0 0.01299f
+C8 D0 G1 0
+C9 S2 D2 0.05121f
+C10 D2 G1 0.0169f
+C11 G2 D2 0.01641f
+C12 B S1 0.0323f
+C13 B G0 0.13368f
+C14 S1 G0 0.01659f
+C15 B D0 0.06804f
+C16 S1 D0 0.05121f
+C17 D0 G0 0.01641f
+C18 B D2 0.03218f
+C19 S1 D2 0.05122f
+C20 D2 G0 0
+C21 D0 D2 0.00423f
+C22 S2 G1 0
+C23 S2 G2 0.01659f
+C24 G2 G1 0.00693f
+C25 S2 VSUBS 0.03454f
+C26 D2 VSUBS 0.0406f
+C27 S1 VSUBS 0.04091f
+C28 D0 VSUBS 0.03423f
+C29 B VSUBS 1.68396f
+.ends
+
+.subckt inverter in out vss vdd
+XXM1 vss out in vss in out vss in sky130_fd_pr__nfet_01v8_KBZXWL
+XXM2 vdd vdd in out in vdd out in vss sky130_fd_pr__pfet_01v8_XQ58Y7
+C0 in vdd 0.35494f
+C1 vdd out 0.18479f
+C2 in out 0.22575f
+C3 vdd vss 0.23907f
+C4 out vss 0.58822f
+C5 in vss 0.93535f
+.ends
+
