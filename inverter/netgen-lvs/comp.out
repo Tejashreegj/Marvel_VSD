@@ -1,0 +1,279 @@
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_KBZXWL in circuit inverter (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_XQ58Y7 in circuit inverter (0)(1 instance)
+Class inverter:  Merged 4 devices.
+
+Subcircuit summary:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+c (58)                                     |(no matching element)                      
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 60 **Mismatch**         |Number of devices: 2 **Mismatch**          
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: inverter                        |Circuit 2: inverter                        
+
+---------------------------------------------------------------------------------------
+Net: vss                                   |Net: out                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/4 = 1            |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  c/top = 5                                |                                           
+  c/bottom = 19                            |                                           
+                                           |                                           
+Net: out                                   |Net: in                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 1            
+  c/top = 17                               |  sky130_fd_pr__pfet_01v8/2 = 1            
+  c/bottom = 12                            |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: in                                    |Net: vss                                   
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  c/bottom = 19                            |  sky130_fd_pr__nfet_01v8/4 = 1            
+  c/top = 19                               |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: vdd                                   |Net: vdd                                   
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/4 = 1            |  sky130_fd_pr__pfet_01v8/4 = 1            
+  c/top = 17                               |                                           
+  c/bottom = 8                             |                                           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: inverter                        |Circuit 2: inverter                        
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 31                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 26                                 |                                           
+  bottom = 31                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 31                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 31                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 31                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 26                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 31                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 31                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 26                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 31                                 |                                           
+  bottom = 31                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 31                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 26                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 31                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 26                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 31                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 27                                 |                                           
+  bottom = 31                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 31                                 |                                           
+  bottom = 31                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 27                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 31                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 27                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 31                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 27                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 31                                 |                                           
+  bottom = 27                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 27                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 27                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 27                                 |                                           
+  bottom = 31                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 27                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 31                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 27                                 |                                           
+  bottom = 27                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 31                                 |                                           
+  bottom = 27                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 27                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 27                                 |                                           
+  bottom = 27                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 31                                 |                                           
+  bottom = 27                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 27                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 27                                 |                                           
+  bottom = 27                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 31                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 31                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 40                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 31                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 27                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 31                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 27                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 27                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: c0                               |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 27                              |                                           
+                                           |                                           
+Instance: c1                               |(no matching instance)                     
+  top = 27                                 |                                           
+  bottom = 31                              |                                           
+                                           |                                           
+Instance: c2                               |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 31                              |                                           
+                                           |                                           
+Instance: c3                               |(no matching instance)                     
+  top = 27                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: c4                               |(no matching instance)                     
+  top = 31                                 |                                           
+  bottom = 26                              |                                           
+                                           |                                           
+Instance: c5                               |(no matching instance)                     
+  top = 40                                 |                                           
+  bottom = 26                              |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Netlists do not match.

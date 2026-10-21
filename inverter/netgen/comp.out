@@ -1,26 +1,155 @@
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_KBZXWL in circuit inverter (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_XQ58Y7 in circuit inverter (0)(1 instance)
-Class inverter:  Merged 4 devices.
+Class inverter:  Merged 45 devices.
 
 Subcircuit summary:
 Circuit 1: inverter                        |Circuit 2: inverter                        
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
-sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
-Number of devices: 2                       |Number of devices: 2                       
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (1) **Mismatch**   
+c (15)                                     |(no matching element)                      
+sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (1) **Mismatch**   
+Number of devices: 19 **Mismatch**         |Number of devices: 2 **Mismatch**          
 Number of nets: 4                          |Number of nets: 4                          
 ---------------------------------------------------------------------------------------
-Circuits match uniquely.
-Netlists match uniquely.
-
-Subcircuit pins:
+NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: inverter                        |Circuit 2: inverter                        
--------------------------------------------|-------------------------------------------
-out                                        |out                                        
-in                                         |in                                         
-vss                                        |vss                                        
-vdd                                        |vdd                                        
+
 ---------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes inverter and inverter are equivalent.
-Circuits match uniquely.
+(no matching net)                          |Net: out                                   
+                                           |  sky130_fd_pr__nfet_01v8/1 = 1            
+                                           |  sky130_fd_pr__pfet_01v8/1 = 1            
+                                           |                                           
+(no matching net)                          |Net: in                                    
+                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+(no matching net)                          |Net: vss                                   
+                                           |  sky130_fd_pr__nfet_01v8/3 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/4 = 1            
+                                           |                                           
+(no matching net)                          |Net: vdd                                   
+                                           |  sky130_fd_pr__pfet_01v8/3 = 1            
+                                           |  sky130_fd_pr__pfet_01v8/4 = 1            
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: in                                    |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 2            |                                           
+  c/bottom = 4                             |                                           
+  c/top = 4                                |                                           
+  sky130_fd_pr__pfet_01v8/2 = 2            |                                           
+                                           |                                           
+Net: out                                   |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/3 = 1            |                                           
+  sky130_fd_pr__nfet_01v8/1 = 1            |                                           
+  c/top = 4                                |                                           
+  c/bottom = 4                             |                                           
+  sky130_fd_pr__pfet_01v8/3 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/1 = 1            |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vdd                                   |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/1 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/4 = 2            |                                           
+  sky130_fd_pr__pfet_01v8/3 = 1            |                                           
+  c/top = 4                                |                                           
+  c/bottom = 3                             |                                           
+                                           |                                           
+Net: vss                                   |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/1 = 1            |                                           
+  sky130_fd_pr__nfet_01v8/4 = 2            |                                           
+  sky130_fd_pr__nfet_01v8/3 = 1            |                                           
+  c/top = 3                                |                                           
+  c/bottom = 4                             |                                           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: inverter                        |Circuit 2: inverter                        
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |Instance: sky130_fd_pr__nfet_01v8M1        
+  1 = 11                                   |  1 = 2                                    
+  2 = 12                                   |  2 = 2                                    
+  3 = 12                                   |  3 = 2                                    
+  4 = 11                                   |  4 = 2                                    
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |Instance: sky130_fd_pr__pfet_01v8M2        
+  1 = 12                                   |  1 = 2                                    
+  2 = 12                                   |  2 = 2                                    
+  3 = 11                                   |  3 = 2                                    
+  4 = 11                                   |  4 = 2                                    
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 12                                 |                                           
+  bottom = 12                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 12                                 |                                           
+  bottom = 12                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 12                                 |                                           
+  bottom = 12                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 12                                 |                                           
+  bottom = 12                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 11                                 |                                           
+  bottom = 12                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 11                                 |                                           
+  bottom = 12                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 11                                 |                                           
+  bottom = 12                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 11                                 |                                           
+  bottom = 12                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 12                                 |                                           
+  bottom = 11                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 12                                 |                                           
+  bottom = 11                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 12                                 |                                           
+  bottom = 11                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 12                                 |                                           
+  bottom = 11                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_KBZXWLXM |(no matching instance)                     
+  top = 11                                 |                                           
+  bottom = 11                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 11                                 |                                           
+  bottom = 11                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  top = 11                                 |                                           
+  bottom = 11                              |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  1 = 11                                   |                                           
+  2 = 12                                   |                                           
+  3 = 12                                   |                                           
+  4 = 11                                   |                                           
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8_XQ58Y7XM |(no matching instance)                     
+  1 = 12                                   |                                           
+  2 = 12                                   |                                           
+  3 = 11                                   |                                           
+  4 = 11                                   |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Netlists do not match.

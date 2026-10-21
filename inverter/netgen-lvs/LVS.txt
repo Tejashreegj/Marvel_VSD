@@ -1,0 +1,48 @@
+Netgen 1.5.133 compiled on Thu Dec  1 22:32:11 UTC 2022
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file ../mag/inverter.spice
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Reading netlist file ../xschem/simulation/inverter.spice
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+No property area found for device c
+Comparison output logged to file ../netgen/comp.out
+Logging to file "../netgen/comp.out" enabled
+Contents of circuit 1:  Circuit: 'inverter'
+Circuit inverter contains 64 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   3
+  Class: c                     instances:  58
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'inverter'
+Circuit inverter contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'inverter'
+Circuit inverter contains 19 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: c                     instances:  15
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'inverter'
+Circuit inverter contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 19 devices, Circuit 2 contains 2 devices. *** MISMATCH ***
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+Result: Netlists do not match.
+Logging to file "../netgen/comp.out" disabled
+LVS Done.
